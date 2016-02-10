@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <script>
+        function Product() {
+            // prove that 3 arguments are received by the Product function
+            assert(arguments.length === 3);
+            // calculate the sum of the arguments and return the result....
+            return [].reduce.call(arguments, function (prev, current) {
+                return prev + current;
+            });
+        }
+
+        function assert(condition, message) {
+            if (!condition) {
+                throw message || "Assertion failed";
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="resultDiv"></div>
+<script>
+    var score = Product.apply(null, [1, 2, 3]);
+    var resultDiv = document.getElementById('resultDiv');
+    var textNode = document.createTextNode(score);
+    resultDiv.appendChild(textNode);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hallo wereld</title>
+</head>
+<body>
+<div id="hallo"></div>
+<script>
+    (function () {
+        var halloWereld = "Hallo Wereld";
+        var halloDiv = document.getElementById('hallo');
+        var pTag  = document.createElement('p');
+        var newContent = document.createTextNode(halloWereld);
+        pTag.appendChild(newContent);
+        halloDiv.appendChild(pTag);
+    })();
+
+</script>
+</body>
+</html>

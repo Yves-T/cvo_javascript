@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB to hex</title>
+    <style>
+        input[type=number] {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+<form id="myForm">
+    R: <input type="text" id="kleurRIn" maxlength="3" size="3" />
+    G: <input type="text" id="kleurGIn" maxlength="3" size="3" />
+    B: <input type="text" id="kleurBIn" maxlength="3" size="3" />
+    <input type="button" onclick="berekenKleur()" value="Bereken de kleur" />
+    <input type="text" id="hexWaardeOut">
+</form>
+
+<form id="myOtherForm">
+    HEX:<input type="text" id="hexWaardeIn">
+    <input type="button" onclick="berekenRGBKleur()" value="Bereken de RGB waarde" />
+    R: <input type="text" id="rgbR" maxlength="3" size="3" />
+    G: <input type="text" id="rgbG" maxlength="3" size="3" />
+    B: <input type="text" id="rgbB" maxlength="3" size="3" />
+
+
+
+</form>
+<script src="js/rgbToHex.js"></script>
+</body>
+</html>

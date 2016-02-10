@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raad het getal</title>
+</head>
+<body>
+<div>
+    <p id="intro">Ik heb een getal tussen van 1 t.e.m. 10 in mijn gedachten. Wil jij het proberen te raden?
+    </p>
+
+    <form id="formulier">
+        <input type="button" value="Start" id="knop_start" onclick="startSpel()"/>
+        <input type="text" value="" id="raad"/>
+        <input type="button" value="Controleer" id="knop_poging" onclick="poging()"/>
+    </form>
+</div>
+<p id="afdrukResultaat"></p>
+<input type="button" value="Speel opnieuw" id="knop_opnieuw" onclick="startSpel()"/>
+<script src="js/raadHetGetal.js"></script>
+</body>
+</html>
